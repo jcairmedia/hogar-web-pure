@@ -147,3 +147,45 @@ a:focus
     max-width: 25px;
     max-height: 25px;
 }
+
+
+.valu
+{
+    display: flex;
+    background-image: url('../images/fondo_home_valu.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+}
+
+.valu__content
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.image--align
+{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+
+}
+
+.content__ask
+{
+    flex: 1;
+    display: flex;
+}
+
+.content__button
+{
+    flex: 1;
+}
