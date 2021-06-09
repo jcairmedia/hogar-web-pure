@@ -4,6 +4,16 @@ a
     color: inherit;
 }
 
+p
+{
+    color:#8E8B8B;
+}
+
+h1
+{
+    color: #32357C;
+}
+
 a:hover
 {
     color: inherit;
@@ -70,3 +80,70 @@ a:focus
     margin: 2%;
 }
 
+.welcome 
+{
+    display: flex;
+    margin: 5% 2%;
+    border-radius: 30px;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+
+.welcome__home
+{
+    max-width: 350px;
+}
+
+.welcome__wrapper
+{
+    width: 35%;
+}
+
+.wrapper_text{
+    text-align: justify;
+}
+
+.footer
+{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: center;
+    background-color: #32357C;
+}
+
+.footer__void
+{
+    flex: 1;
+}
+
+.footer__wrapper
+{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.wrapper__links
+{
+    margin-top: -15px;
+}
+
+.footer__icons
+{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons__contact
+{
+    margin: 5%;
+    max-width: 25px;
+    max-height: 25px;
+}
