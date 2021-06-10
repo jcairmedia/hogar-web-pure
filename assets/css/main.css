@@ -7,7 +7,6 @@ a
 p
 {
     color:#8E8B8B;
-    margin: 0;
 }
 
 h1
@@ -190,7 +189,7 @@ a:focus
 
 .services__text
 {
-    margin: 5%;
+    margin: 5% 28%;
     text-align: center;
 }
 
@@ -283,7 +282,15 @@ a:focus
     }
 }
 
+.legalicity
+{
+    margin: 2% 20%;
+}
 
+.legalicity__text
+{
+    text-align: center;
+}
 .footer
 {
     display: flex;
@@ -309,6 +316,7 @@ a:focus
 
 .wrapper__links
 {
+    margin-top: -15px;
     color:white;
 }
 
