@@ -7,12 +7,14 @@ a
 p
 {
     color:#8E8B8B;
+    margin: 0;
 }
 
 h1
 {
     color: #32357C;
 }
+
 
 a:hover
 {
@@ -130,7 +132,7 @@ a:focus
 
 .wrapper__links
 {
-    margin-top: -15px;
+
 }
 
 .footer__icons
@@ -152,11 +154,16 @@ a:focus
 .valu
 {
     display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    height: 600px;
+
+    border-radius: 20px;
     background-image: url('../images/fondo_home_valu.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+
 
 }
 
@@ -167,14 +174,14 @@ a:focus
     flex: 1;
     justify-content: center;
     align-items: center;
-    height: 100%;
     position: relative;
+    padding: 95px 20px 20px 20px;
 }
 
 .image--align
 {
     position: absolute;
-    top: 80px;
+    top: 115px;
     left: 50px;
 
 }
@@ -183,9 +190,66 @@ a:focus
 {
     flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.ask__icon
+{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.ask__text
+{
+    flex: 4;
 }
 
 .content__button
 {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.content__button button
+{
+    height: 50px;
+    width: 66%;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #32357C;
+
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 810px)
+{
+    .valu
+    {
+        height: auto;
+    }
+
+    .valu__content
+    {
+        margin-bottom: 30px;
+        height: 500px;
+        padding-top: 10px;
+    }
+
+    .image--align
+    {
+        top: 50px;
+        left: 80px;
+    }
 }
