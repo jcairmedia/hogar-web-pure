@@ -1,0 +1,22 @@
+@use "../settings/variables";
+
+.a-btn
+{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+  font-size: variables.$fs-btn;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: variables.$primary-color;
+  color: variables.$primary-button-text-color;
+
+  &--wa-button
+  {
+    background-color: variables.$wa-button;
+  }
+}

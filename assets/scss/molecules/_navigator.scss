@@ -1,0 +1,18 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.m-navigator
+{
+  @include mixins.main_container();
+  color: variables.$menu-color;
+
+  .m-navigator__list
+  {
+    @include mixins.main_container(center, space-between);
+
+    .list__item
+    {
+        margin: 0 1rem;
+    }
+  }
+}

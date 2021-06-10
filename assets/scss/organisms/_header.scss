@@ -1,0 +1,18 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-header
+{
+  @include mixins.main_container(center, space-between);
+  position: sticky;
+  top: 0;
+  padding: 1rem 5%;
+  background-color: variables.$primary-color;
+  z-index: variables.$z-menu;
+
+  a
+  {
+    max-width: 20%;
+  }
+}
+
