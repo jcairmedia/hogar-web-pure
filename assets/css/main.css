@@ -15,6 +15,11 @@ h1
     color: #32357C;
 }
 
+h2
+{
+    color: white;
+}
+
 
 a:hover
 {
@@ -107,49 +112,87 @@ a:focus
     text-align: justify;
 }
 
-.footer
+.cards
 {
     display: flex;
-    padding: 1% 5%;
-    justify-content: center;
-    background-color: #32357C;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2%;
 }
 
-.footer__void
+.cards__card
 {
-    flex: 1;
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-color: #F1F1F1;
 }
 
-.footer__wrapper
+.cards__card-vertical
 {
     display: flex;
     flex-direction: column;
-    flex: 2;
-    align-items: center;
-    color: white;
-    text-align: center;
+    width: 350px;
+    margin-top: 2%;
+    border-radius: 20px;
+    background-color: #F1F1F1;
 }
 
-.wrapper__links
-{
-
-}
-
-.footer__icons
+.card__logo
 {
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    flex-direction: column;
+    padding: 3% 0;
+    justify-content: center;
     align-items: center;
+    width: 150px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
 }
 
-.icons__contact
+.card__logo-vertical
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__logo--blue
+{
+    background-color: #4D9FB3;
+}
+
+.card__logo .card__logo--violet
+{
+    background-color: #A54878;
+}
+
+.card__logo .card__logo--green
+{
+    background-color: #93D251;
+}
+.card__logo--water-green
+{
+    background-color: #5ECFC6;
+}
+
+.card__text
 {
     margin: 5%;
-    max-width: 25px;
-    max-height: 25px;
+    text-align: justify;
 }
 
+.services__text
+{
+    margin: 5%;
+    text-align: center;
+}
 
 .valu
 {
@@ -157,7 +200,6 @@ a:focus
     flex-wrap: wrap;
     margin: 2%;
     height: 600px;
-
     border-radius: 20px;
     background-image: url('../images/fondo_home_valu.png');
     background-position: center center;
@@ -178,13 +220,6 @@ a:focus
     padding: 95px 20px 20px 20px;
 }
 
-.image--align
-{
-    position: absolute;
-    top: 115px;
-    left: 50px;
-
-}
 
 .content__ask
 {
@@ -233,7 +268,7 @@ a:focus
     font-size: 1.5rem;
 }
 
-@media (max-width: 810px)
+@media (max-width: 845px)
 {
     .valu
     {
@@ -246,10 +281,49 @@ a:focus
         height: 500px;
         padding-top: 10px;
     }
-
-    .image--align
-    {
-        top: 50px;
-        left: 80px;
-    }
 }
+
+
+.footer
+{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: center;
+    background-color: #32357C;
+}
+
+.footer__void
+{
+    flex: 1;
+}
+
+.footer__wrapper
+{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.wrapper__links
+{
+    color:white;
+}
+
+.footer__icons
+{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons__contact
+{
+    margin: 5%;
+    max-width: 25px;
+    max-height: 25px;
+}
+
