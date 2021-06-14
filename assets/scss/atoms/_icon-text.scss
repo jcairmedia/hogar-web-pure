@@ -1,0 +1,15 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.a-icon-text
+{
+  @include mixins.main_container(center,flex-start);
+  flex-wrap: nowrap;
+  width: 30rem;
+  margin: 1rem;
+
+  .a-icon-text--padding
+  {
+    padding: 1rem;
+  }
+}

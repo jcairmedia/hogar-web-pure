@@ -6,14 +6,22 @@
 
 // Atoms
 @use "atoms/btn";
+@use "atoms/icon-text";
+@use "atoms/title-text";
 
 // Molecules
 @use "molecules/form";
 @use "molecules/navigator";
-
+@use "molecules/card-main";
+@use "molecules/card-secondary";
 
 // Organisms
 @use "organisms/header";
+@use "organisms/welcome";
+@use "organisms/cards";
+@use "organisms/valu";
+@use "organisms/seccion-center";
+@use "organisms/footer";
 
 
 // Utilities

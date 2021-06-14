@@ -1,0 +1,40 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.m-card-secondary
+{
+  @include mixins.secondary_container_color(center,center, variables.$card-backgroundColor);
+  width: 22rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+
+  .m-card-secondary--violet
+  {
+    @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorViolet);
+    width: 30rem;
+    height: 12rem;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .m-card-secondary--lightBlue
+  {
+    @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorLightBlue);
+    width: 30rem;
+    height: 12rem;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .m-card-secondary--lemonGreen
+  {
+    @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorLemonGreen);
+    width: 30rem;
+    height: 12rem;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .m-card-text
+  {
+    margin: 5%;
+    text-align: justify;
+  }
+}

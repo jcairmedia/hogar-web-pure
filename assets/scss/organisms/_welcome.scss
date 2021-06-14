@@ -1,0 +1,9 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-welcome {
+  @include mixins.secondary_container_color(center, space-around, variables.$card-backgroundColor);
+  height: 15rem;
+  margin: 5rem 2.1rem ;
+  border-radius: 20px;
+}

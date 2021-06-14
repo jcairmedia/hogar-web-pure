@@ -1,0 +1,7 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-cards
+{
+  @include mixins.main_container(center, space-around);
+}

@@ -1,0 +1,45 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-footer
+{
+    p
+    {
+        margin: 0;
+        color: variables.$primary-button-text-color;
+    }
+    @include mixins.main_container();
+    background-color: variables.$primary-color;
+    color: variables.$footer-color;
+
+    .a-title-text
+    {
+        align-items: center;
+        text-align: center;
+    }
+
+    .g-footer__inline
+    {
+        @include mixins.main_container();
+        flex: 2;
+    }
+
+    .g-footer__icons
+    {
+        @include mixins.main_container(center,flex-end);
+        flex: 1;
+        margin-right: 1rem;
+
+        .g-footer__icons-size
+        {
+            margin: 5%;
+            max-width: 2rem;
+            max-height: 2rem;
+        }
+    }
+
+    .g-footer__void
+    {
+        flex: 1;
+    }
+}

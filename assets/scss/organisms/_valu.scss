@@ -1,0 +1,51 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-valu
+{
+  @include mixins.main_container(center,space-evenly);
+  @include mixins.background_container("../../assets/images/fondo_home_valu.png");
+  margin: 2.1rem 2.1rem 0 2.1rem;
+  padding: 5rem;
+  border-radius: 20px;
+
+  .g-valu__content
+  {
+    @include mixins.secondary_container();
+    flex: 1;
+    width: 20rem;
+    flex-wrap: nowrap;
+  }
+
+  .g-valu__content-image
+  {
+    @include mixins.main_container();
+    flex: 1;
+  }
+
+  .a-btn
+  {
+    width: 20rem;
+    margin: 1rem;
+  }
+
+  .a-icon-text
+  {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 1254px)
+{
+  .g-valu
+  {
+    height: auto;
+  }
+
+  .g-valu__content
+  {
+    margin-bottom: 30px;
+    height: 500px;
+    padding-top: 10px;
+  }
+}

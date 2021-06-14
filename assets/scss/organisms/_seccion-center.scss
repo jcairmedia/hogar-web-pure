@@ -1,0 +1,22 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-seccion-center
+{
+  @include mixins.secondary_container();
+
+  .a-title-text
+  {
+    align-items: center;
+    text-align: center;
+  }
+
+  .g-seccion-center__text
+  {
+    @include mixins.secondary_container();
+    width: 55rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}

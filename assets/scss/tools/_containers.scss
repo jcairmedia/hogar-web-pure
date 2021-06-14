@@ -15,6 +15,25 @@
   justify-content: $horizontal-align;
 }
 
+@mixin main_container_color($vertical-align: center, $horizontal-align: center, $background-color)
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: $vertical-align;
+  justify-content: $horizontal-align;
+  background-color: $background-color;
+}
+
+@mixin secondary_container_color($vertical-align: center, $horizontal-align: center, $background-color)
+{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: $vertical-align;
+  justify-content: $horizontal-align;
+  background-color: $background-color;
+}
+
 @mixin background_container($background-image)
 {
   background-image: url($background-image);

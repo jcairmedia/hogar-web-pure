@@ -1,0 +1,15 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.a-title-text
+{
+  p
+  {
+    margin-top: 1rem;
+  }
+  @include mixins.secondary_container();
+  width: 40rem;
+  padding: 1rem;
+  align-items: flex-start;
+  text-align: justify;
+}
