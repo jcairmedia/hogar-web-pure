@@ -1,0 +1,32 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-section-background
+{
+  @include mixins.main_container();
+  @include mixins.background_container("../../assets/images/imagen_fondo_mi_casa.png");
+  padding: 2rem;
+  margin-bottom: 2rem;
+  .g-cards
+  {
+    justify-content: space-around;
+  }
+  .m-card-secondary
+  {
+    width: 30rem;
+    height: 10rem;
+    padding: 2rem 2rem 0 2rem;
+    align-items: flex-start;
+    color: variables.$primary-text-color;
+    box-shadow: 7px 5px 5px variables.$card-secondary-ShadowColor;
+    .m-card-text
+    {
+      width: 35rem;
+    }
+    h2
+    {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

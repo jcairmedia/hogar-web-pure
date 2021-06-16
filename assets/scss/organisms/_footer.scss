@@ -22,6 +22,7 @@
     {
         @include mixins.main_container();
         flex: 2;
+        color: variables.$footer-color;
     }
 
     .g-footer__icons

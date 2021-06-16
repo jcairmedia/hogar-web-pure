@@ -1,0 +1,12 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-services
+{
+  @include mixins.main_container(center,space-evenly);
+  @include mixins.background_container("../../assets/images/fondo_home_valu.png");
+  height: 30rem;
+  margin: 2.1rem 2.1rem 0 2.1rem;
+  padding: 5rem;
+  border-radius: 20px;
+}

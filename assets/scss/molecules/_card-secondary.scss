@@ -4,37 +4,92 @@
 .m-card-secondary
 {
   @include mixins.secondary_container_color(center,center, variables.$card-backgroundColor);
-  width: 22rem;
   margin-top: 2rem;
-  border-radius: 20px;
+  border-radius: 30px;
+  color: variables.$card-title-color;
 
   .m-card-secondary--violet
   {
     @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorViolet);
-    width: 30rem;
+    padding: 2rem .5rem 2rem .5rem;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .m-card-secondary--FieldGreen
+  {
+    @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorFieldGreen);
+    padding: 2rem .5rem 2rem .5rem;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .m-card-text
+  {
+    padding: 0 1rem;
+    width: 13rem;
+    text-align: justify;
+    color: variables.$second-text-color;
+    p{
+      margin: 1rem 0;
+    }
+  }
+
+  .m-card-secondary__image
+  {
+    max-height: 155px;
+  }
+
+  h2
+  {
+    text-align: center;
+    width: 9rem;
+  }
+}
+
+.m-card-secondary-short
+{
+  @include mixins.secondary_container_color(center,center, variables.$card-backgroundColor);
+  margin-top: 2rem;
+  border-radius: 30px;
+  color: variables.$card-title-color;
+
+  .m-card-secondary--violet
+  {
+    @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorViolet);
+    width: 10rem;
     height: 12rem;
-    border-radius: 20px 0 0 20px;
+    border-radius: 30px 0 0 30px;
   }
 
   .m-card-secondary--lightBlue
   {
     @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorLightBlue);
-    width: 30rem;
+    width: 10rem;
     height: 12rem;
-    border-radius: 20px 0 0 20px;
+    border-radius: 30px 0 0 30px;
   }
 
   .m-card-secondary--lemonGreen
   {
     @include mixins.main_container_color(center,space-evenly, variables.$cardLogo-BackgroundColorLemonGreen);
-    width: 30rem;
+    width: 10rem;
     height: 12rem;
-    border-radius: 20px 0 0 20px;
+    border-radius: 30px 0 0 30px;
   }
 
   .m-card-text
   {
-    margin: 5%;
+    padding: 0 1rem;
+    width: 12rem;
     text-align: justify;
+    color: variables.$second-text-color;
+    p{
+      margin: 1rem 0;
+    }
+  }
+
+  h2
+  {
+    text-align: center;
+    width: 9rem;
   }
 }

@@ -1,0 +1,13 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: variables.$primary-color;
+    cursor: pointer;
+  }
+}

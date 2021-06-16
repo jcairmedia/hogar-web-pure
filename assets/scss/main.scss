@@ -3,6 +3,7 @@
 @use "generic/reset";
 
 // Elements
+@use "elements/link";
 
 // Atoms
 @use "atoms/btn";
@@ -14,13 +15,17 @@
 @use "molecules/navigator";
 @use "molecules/card-main";
 @use "molecules/card-secondary";
+@use "molecules/card-image";
+@use "molecules/card-title";
 
 // Organisms
 @use "organisms/header";
-@use "organisms/welcome";
+@use "organisms/section-informative";
 @use "organisms/cards";
 @use "organisms/valu";
-@use "organisms/seccion-center";
+@use "organisms/section-center";
+@use "organisms/section-background";
+@use "organisms/section-contact";
 @use "organisms/footer";
 
 

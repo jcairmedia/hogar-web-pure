@@ -26,7 +26,7 @@ $_dark-gray: #525252;
 $_gray: #707070;
 $_opaque-gray: #6f6f6e;
 $_light-gray: #e1e1e1;
-$_gray-blue: #e6e6e6;
+$_gray-blue: #F7F7F7;
 
 // generic usage colors
 $primary-color: $_cardif-blue;
@@ -41,12 +41,19 @@ $cardLogo-BackgroundColorLightBlue : $_light-blue;
 $cardLogo-BackgroundColorAqua : $_aqua;
 $cardLogo-BackgroundColorLemonGreen : $_lemon-green;
 $cardLogo-BackgroundColorFieldGreen : $_field-green;
-
+$cardLogo-BackgroundColorGreen : $_green;
+$cardLogo-BackgroundColorOpaqueGreen : $_opaque-green;
+$cardLogo-BackgroundColorSalmon : $_salmon;
+$card-title-ShadowColor : $_opaque-gray;
+$card-secondary-ShadowColor : $_light-gray;
+$card-contact: $_gray-blue;
 // Text
 $primary-button-text-color: $_white;
-
+$primary-text-color: $_cardif-blue;
+$second-text-color: $_opaque-gray;
 $menu-color: $_white;
 $footer-color: $_white;
+$card-title-color: $_white;
 
 
 //elements

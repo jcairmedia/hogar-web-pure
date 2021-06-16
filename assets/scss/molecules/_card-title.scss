@@ -1,0 +1,12 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.m-card-title
+{
+  @include mixins.main_container_color(center,center, variables.$card-backgroundColor);
+  width: 55rem;
+  height: 8rem;
+  border-radius: 30px;
+  color: variables.$primary-text-color;
+  box-shadow: 5px 3px 3px variables.$card-title-ShadowColor;
+}

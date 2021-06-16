@@ -15,8 +15,9 @@
   {
     @include mixins.secondary_container();
     width: 55rem;
-    padding: 1rem;
+    padding: 2.5rem;
     align-items: center;
     text-align: center;
+    color: variables.$second-text-color;
   }
 }

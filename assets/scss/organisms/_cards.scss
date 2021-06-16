@@ -3,5 +3,6 @@
 
 .g-cards
 {
-  @include mixins.main_container(center, space-around);
+  @include mixins.main_container(center, space-between);
+  margin: 2rem;
 }

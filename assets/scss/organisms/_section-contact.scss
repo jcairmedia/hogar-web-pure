@@ -1,0 +1,19 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-section-contact
+{
+  @include mixins.main_container-color(center, center, variables.$card-contact);
+  padding: 1rem;
+  z-index: variables.$z-contact;
+
+  .g-section-contact-icons
+  {
+    @include mixins.main_container();
+  }
+
+  .g-section-contact-image--resize
+  {
+    max-width: 20px;
+  }
+}
